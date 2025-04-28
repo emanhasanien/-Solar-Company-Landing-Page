@@ -1,41 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
+body {
+  overflow-y: hidden;
+}
 a {
   text-decoration: none;
   color: #fff;
 }
-
 ul {
   list-style: none;
   display: flex;
   align-items: center;
 }
-
 ul li {
   padding-right: 40px;
   cursor: pointer;
 }
-
 .container {
   width: 90%;
   margin: auto;
 }
-
 /*============ Navbar =========*/
 header {
   height: 86px;
   padding: 16px;
-  background-color: #0B9586;
+  background-color: #0b9586;
   display: flex;
   align-items: center;
 }
-
 header nav {
   display: flex;
   align-items: center;
@@ -43,11 +39,9 @@ header nav {
   color: #fff;
   font-size: 18px;
 }
-
 header nav img {
-  opacity: .3;
+  opacity: 0.3;
 }
-
 header nav .active-link {
   width: 54px;
   height: 22px;
@@ -57,19 +51,16 @@ header nav .active-link {
   border-radius: 5px;
   margin-right: 20px;
 }
-
 header .burger-icon {
   width: 25px;
   height: 25px;
   display: none;
   cursor: pointer;
 }
-
 .nav-items {
   display: flex;
 }
-
-/*Navbar Media Query */
+/* ========= Navbar Media Query =========*/
 @media (max-width: 698px) {
   header .burger-icon {
     display: flex;
@@ -82,17 +73,126 @@ header .burger-icon {
     position: absolute;
     right: 0;
     top: 86px;
-    background-color:#b3b4b4;
+    background-color: #b3b4b4;
     width: 100%;
     height: calc(40vh - 86px);
     gap: 20px;
     padding-top: 20px;
+    z-index: 999;
   }
-  
   .nav-items.active {
     display: flex;
   }
-  header .CTA{
+  header .CTA {
     font-size: 14px;
+  }
+}
+/*========== Home Style =========== */
+#home {
+  min-height: 100vh;
+  background-image: url("../images/home-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+#home .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#home .main .progress-container {
+  margin: 9.375rem 0;
+}
+#home .main-header {
+  font-size: 3.125rem;
+  width: 60%;
+  margin-bottom: 1.25rem;
+}
+#home .descrption {
+  width: 45%;
+  font-weight: bold;
+}
+
+#home .progress-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+#home .progress-container meter {
+  width: 200px;
+  height: 4px;
+  background: #555;
+  border: none;
+  border-radius: 2px;
+}
+#home .progress-container meter::-webkit-meter-bar {
+  background: #555;
+  border-radius: 2px;
+}
+#home .progress-container meter::-webkit-meter-optimum-value {
+  background: white;
+  border-radius: 2px;
+}
+#home .progress-container meter::-moz-meter-bar {
+  background: white;
+  border-radius: 2px;
+}
+#home .cta-btns {
+  margin-top: 2.5rem;
+}
+
+#home .cta-btns .btn1 {
+  color: white;
+  background-color: #3cab90;
+  padding: 10px 30px;
+  border-radius: 3.125rem;
+  border: none;
+}
+
+#home .cta-btns .btn2 {
+  color: #2a3334;
+  background-color: #ffbb1c;
+  padding: 10px 50px;
+  border-radius: 3.125rem;
+  border: none;
+}
+
+/* Media query  */
+@media (max-width: 908px) {
+  #home .main-header {
+    font-size: 2.5rem;
+  }
+  #home .descrption {
+    width: 70%;
+  }
+}
+@media (max-width: 730px) {
+  #home .main-header {
+    width: 70%;
+  }
+}
+@media (max-width: 625px) {
+  #home .main-header {
+    font-size: 30px;
+  }
+}
+@media (max-width: 625px) {
+  #home .main-header {
+    font-size: 25px;
+    width: 80%;
+    font-weight: 600;
+  }
+}
+@media (max-width: 401px) {
+  #home .cta-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 }
