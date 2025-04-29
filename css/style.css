@@ -195,8 +195,9 @@ header .burger-icon {
 }
 /*========== Section-2 Style =========== */
 #sec-2 {
-  height: 44.5rem;
+  /* height: 44.5rem; */
   background-color: white;
+  margin-bottom: 50px;
 }
 #sec-2 .trade-details {
   display: flex;
@@ -343,4 +344,54 @@ header .burger-icon {
     font-size: 15px;
     padding:0;
    }
+}
+/*========== CTA Section-3 Style =========== */
+#cta{
+  height: 32rem;
+  background-image: url("../images/8116\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+}
+#cta .title{
+  font-size: 42px;
+  font-weight: 600;
+  margin-block: 30px;
+}
+#cta .desc{
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+}
+/* Media Query */
+@media (max-width : 1068px){
+  #cta{
+    padding: 24px;
+  }
+}
+@media (max-width :814px){
+  #cta .title{
+    font-size: 35px;
+  }
+  #cta .desc{
+    width: 90%;
+  }
+}
+@media (max-width :689px){
+  #cta .title{
+    font-size: 30px;
+  }
+  #cta .desc{
+    font-size: 18px;
+    width: 100%;
+  }
+}
+@media (max-width :557px){
+  #cta .title{
+    font-size: 25px;
+  }
 }
