@@ -4,9 +4,6 @@
   margin: 0;
   font-family: "Inter", sans-serif;
 }
-body {
-  overflow-y: hidden;
-}
 a {
   text-decoration: none;
   color: #fff;
@@ -114,7 +111,6 @@ header .burger-icon {
   width: 45%;
   font-weight: bold;
 }
-
 #home .progress-container {
   display: flex;
   align-items: center;
@@ -123,7 +119,6 @@ header .burger-icon {
   font-family: Arial, sans-serif;
   font-size: 18px;
 }
-
 #home .progress-container meter {
   width: 200px;
   height: 4px;
@@ -146,7 +141,6 @@ header .burger-icon {
 #home .cta-btns {
   margin-top: 2.5rem;
 }
-
 #home .cta-btns .btn1 {
   color: white;
   background-color: #3cab90;
@@ -154,7 +148,6 @@ header .burger-icon {
   border-radius: 3.125rem;
   border: none;
 }
-
 #home .cta-btns .btn2 {
   color: #2a3334;
   background-color: #ffbb1c;
@@ -162,8 +155,12 @@ header .burger-icon {
   border-radius: 3.125rem;
   border: none;
 }
-
 /* Media query  */
+@media (max-width: 992px) {
+  #home .cta-btns{
+    padding-bottom: 50px;
+  }
+}
 @media (max-width: 908px) {
   #home .main-header {
     font-size: 2.5rem;
@@ -195,4 +192,155 @@ header .burger-icon {
     flex-direction: column;
     gap: 1.25rem;
   }
+}
+/*========== Section-2 Style =========== */
+#sec-2 {
+  height: 44.5rem;
+  background-color: white;
+}
+#sec-2 .trade-details {
+  display: flex;
+  padding-top: 80px;
+  gap: 23px;
+}
+#sec-2 .title {
+  font-size: 42px;
+  font-weight: 600;
+  color: #101828;
+}
+#sec-2 p {
+  font-weight: 400;
+  color: #475467;
+  padding: 20px;
+}
+#sec-2 .co-services {
+  padding: 20px;
+}
+#sec-2 .co-services .num{
+  font-size: 20px;
+  font-weight: 500;
+  color: #84BD3A;
+  margin-right: 10px;
+}
+#sec-2 .co-services .text{
+  font-size: 18px;
+  font-weight: 600;
+  color: #101828;
+  line-height: 50px;
+}
+#sec-2 .charge-container{
+  position: relative;
+}
+#sec-2 .charge-container .charge{
+  width:200px ;
+  height:180px ;
+  background-color: #FFBB1C;
+  border-radius: 12px;
+  padding: 24px 30px;
+  position: absolute;
+  top: 19rem;
+  left: -3rem;
+}
+/* Media Query  */
+@media (max-width: 1068px){
+  #sec-2 .trade-details{
+    gap: 30px;
+  }
+  #sec-2 .title {
+    font-size: 30px;
+  }
+  #sec-2 p {
+    padding: 33px;
+  }
+  #sec-2 .co-services .text{
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #sec-2 .charge-container{
+    width: 50%;
+  }
+  #sec-2 .charge-container .charge{
+    width:150px ;
+  height:160px ;
+  top: 20rem;
+  }
+}
+@media (max-width: 973px){
+  #sec-2 .trade-details{
+    gap: 15px;
+  }
+  #sec-2 .title {
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+  #sec-2 .co-services .text{
+    line-height: 20px;
+    padding-right: 10px;
+  }
+  #sec-2 .co-services .num{
+    font-size: 18px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 937px){
+  #sec-2 .trade-details{
+    gap: 10px;
+  }
+  #sec-2 .co-services .text{
+   font-size: 15px;
+   padding: 7px;
+  }
+  #sec-2 .co-services .num{
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  #sec-2 .charge-container .main-img{
+    width:80% ;
+    margin: auto;
+    margin-right: 10px;
+  }
+  #sec-2 .charge-container .main-img:first-child{
+    width: 100%;
+  }
+  #sec-2 .charge-container .charge{
+    width:100px ;
+  height:120px ;
+  top: 23rem;
+  left: -2rem;
+  }
+}
+@media (max-width: 879px){
+  #sec-2 .trade-details {
+    flex-direction: column;
+    padding-top: 80px;
+    gap: 23px;
+  }
+  #sec-2 .charge-container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media (max-width: 412px){
+  #sec-2 .trade-details {
+    padding-top: 50px;
+  }
+  #sec-2 .title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #sec-2 p {
+    padding: 10px;
+  }
+  #sec-2 .co-services {
+    font-size: 15px;
+    padding: 5px;
+   }
+   #sec-2 .co-services .num{
+    font-size: 16px;
+  }
+  #sec-2 .co-services .text{
+    font-size: 15px;
+    padding:0;
+   }
 }
