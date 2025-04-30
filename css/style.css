@@ -395,3 +395,155 @@ header .burger-icon {
     font-size: 25px;
   }
 }
+/*========== Section-4 Style =========== */
+#solar-kit{
+  /* height: 40rem; */
+  padding-block: 5rem;
+}
+#solar-kit .title{
+  font-size: 42px;
+  font-weight: 600;
+  color: #101828;
+  text-align: center;
+}
+#solar-kit .desc{
+  color: #475467;
+  font-weight: 400;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-block: 10px;
+}
+#solar-kit .card-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+#solar-kit .card{
+  width: 33.3333%;
+  height: 454px;
+}
+#solar-kit .card img{
+  width: 100%;
+}
+#solar-kit .card h4{
+  font-size: 20px;
+  color: #101828;
+  padding-block:5px 20px;
+}
+#solar-kit .card p{
+  color: #475467;
+  padding: 16px;
+  font-weight: 400;
+}
+#solar-kit .card a{
+  color: #3CAB90;
+  font-weight: 600;
+  padding: 16px;
+}
+#solar-kit .card i{
+  color: #3CAB90;
+}
+/* Media Query */
+@media(max-width:994px){
+  #solar-kit .card h4{
+    padding-block:5px 10px;
+  }
+  #solar-kit .card p{
+    padding: 10px;
+  }
+}
+@media(max-width:954px){
+  #solar-kit .card-container{
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  #solar-kit .card{
+    width:47%;
+  }
+}
+@media(max-width:645px){
+  #solar-kit .title{
+    font-size: 30px;
+  }
+  #solar-kit .desc{
+    width: 100%;
+  }
+  #solar-kit .card p{
+    padding: 5px;
+  }
+}
+@media(max-width:621px){
+  #solar-kit .card{
+    width:100%;
+    margin-bottom: 60px;
+  }
+}
+/*========== Section-5 Style =========== */
+#cta-2{
+  height: 511px;
+  background-image: url(../images/sec5-bg.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cta-2 .cta-desc{
+  width:70% ;
+  height: 311px;
+  border-radius: 12px;
+  padding: 44px;
+  background-color: #00000091;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cta-2 .title{
+  font-size: 42px;
+  font-weight: 600;
+}
+#cta-2 .details{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px;
+}
+/* Media Query */
+@media(max-width:992px){
+  #cta-2 .details{
+    padding: 10px;
+  }
+}
+@media(max-width:868px){
+  #cta-2 .cta-desc{
+    width: 80%;
+  }
+  #cta-2 .details{
+    padding: 5px;
+  }
+}
+@media(max-width:674px){
+  #cta-2 .title{
+    font-size: 35px;
+  }
+  #cta-2 .details{
+   font-size: 15px;
+  }
+}
+@media(max-width:564px){
+  #cta-2 .cta-desc{
+    padding: 35px;
+  }
+  #cta-2 .title{
+    font-size: 30px;
+  }
+}
+@media(max-width:482px){
+  #cta-2 .title{
+    font-size: 25px;
+  }
+}
