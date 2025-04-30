@@ -547,3 +547,156 @@ header .burger-icon {
     font-size: 25px;
   }
 }
+/*========== Section-6 Style =========== */
+#solar-products{
+  padding-block: 50px;
+}
+#solar-products .main{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap:20px;
+}
+#solar-products .title{
+  font-size: 42px;
+  font-weight: 600;
+  color: #101828;
+}
+#solar-products .decs{
+  font-size: 18px;
+  font-weight: 400;
+  color:#475467 ;
+}
+#solar-products .card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+#solar-products .card-container .card{
+  width: 47%;
+  border: 1px solid #3CAB90;
+  border-radius: 12px;
+  padding-bottom: 30px;
+}
+#solar-products .card img{
+  margin: 49px auto;
+  display: block;
+}
+#solar-products .card .card-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
+  padding: 20px;
+}
+#solar-products .card .card-body{
+  font-weight: 400;
+  color: #475467;
+  padding: 16px;
+}
+#solar-products .card a{
+  font-weight: 600;
+  color: #3CAB90;
+  padding: 16px;
+}
+#solar-products .card i{
+  color:#3CAB90 ;
+}
+/* Media Query */
+@media (max-width:952px){
+  #solar-products .main{
+    gap: 10px;
+  }
+  #solar-products .card-container{
+    gap: 20px;
+  }
+  #solar-products .product-desc .title{
+    font-size: 25px;
+  }
+  #solar-products .product-desc .decs{
+    padding-top: 20px;
+  }
+  #solar-products .card .card-body{
+    padding: 10px;
+  }
+}
+@media(max-width:847px){
+  #solar-products .card-container .card{
+    width: 80%;
+    margin: auto;
+  }
+  #solar-products .product-desc .decs{
+    font-size: 16px;
+  }
+}
+@media(max-width:659px){
+  #solar-products .main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+}
+
+/*========== Section-7 Style =========== */
+#values-sec{
+  height: 719px;
+}
+#values-sec .values-desc{
+  text-align: center;
+}
+#values-sec .values-desc .title{
+ font-size: 42px;
+ font-weight: 600;
+ color: #101828;
+ padding: 36px;
+}
+#values-sec .values-desc .decs{
+  font-size: 18px;
+  font-weight: 400;
+  color: #475467;
+}
+#values-sec .values-cards{
+  display: flex;
+  gap: 20px;
+  padding-block: 50px;
+}
+#values-sec .values-cards .card{
+  width: 32.33%;
+  border: 1px solid #3CAB90;
+  border-radius: 12px;
+  padding: 12px;
+}
+#values-sec .values-cards .card h4{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+  color: #101828;
+}
+#values-sec .values-cards .card p{
+  font-weight: 400;
+  padding: 16px;
+  color: #475467;
+}
+/* Media Query */
+@media(max-width:992px){
+  #values-sec .values-cards .card p{
+    padding: 5px;
+  }
+}
+@media(max-width:900px){
+  #values-sec .values-cards{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #values-sec .values-cards .card{
+    width: 45%;
+  }
+}
+@media(max-width:689px){
+  #values-sec .values-desc .title{
+    font-size: 30px;
+  }
+  #values-sec .values-cards .card{
+    width: 80%;
+    margin: auto;
+  }
+}
