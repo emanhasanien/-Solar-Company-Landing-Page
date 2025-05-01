@@ -869,4 +869,17 @@ footer  .copyright p{
   footer .copyright ul li{
     padding-right:20px ;
   }
+ 
+}
+@media (max-width:400px){
+  footer .cta .cta-info ul{
+    padding-right: 10px;
+  }
+  footer .cta .subscribe-container button {
+    padding: 12px 10px;
+  }
+  footer .copyright ul{
+   flex-direction: column;
+   gap: 8px;
+  }
 }
